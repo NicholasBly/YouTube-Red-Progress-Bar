@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Red Progress Bar",
+  "version": "1.0",
+  "description": "Fixes the pink progress bar shown on YouTube videos.",
+  "permissions": ["activeTab", "declarativeContent"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
